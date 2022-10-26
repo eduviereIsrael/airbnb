@@ -282,7 +282,7 @@ h6 {
     div {
       padding: 15px;
       background-color: #F7F7F7;
-      width: 48%;
+      width: 45%;
       margin: 4px;
       border-radius: 15px;
       // flex: 1;
@@ -414,6 +414,7 @@ h6 {
     overflow-x: auto;
     max-width: 100%;
     // background-color: red;
+    scroll-snap-type: x mandatory;
 
     
 
@@ -424,6 +425,8 @@ h6 {
       width: 100%;
       box-sizing: border-box;
       padding-left: 20px;
+      scroll-snap-align: start;
+      
 
       .larger-text {
         font-size: 23px;

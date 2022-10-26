@@ -5,8 +5,23 @@ import styles from '../styles/Home.module.css';
 import ReactPlayer from 'react-player';
 import { useRef, useState, useEffect } from 'react';
 
+const useHorizontalScrollEvent = (callback) => {
+  // const positionRef = React.useRef(0);
+  const divRef = useRef();
+
+  return (e) => {
+      const x = e.currentTarget.scrollLeft;
+      console.log(x)
+      if (x !== divRef.current) {
+          divRef.current = x;
+          callback(e);
+      }
+  };
+};
 
 export default function Home() {
+
+ 
 
   const testimonials = [
     {
@@ -66,9 +81,15 @@ export default function Home() {
     }
   
   }, [])
-  
   const divRef = useRef();
-
+  
+  // const handleScroll = (e) => {
+  //   const x = e.currentTarget.scrollLeft;
+  //   if (x !== divRef.current) {
+  //       divRef.current = x;
+  //       console.log('Horizontal scroll event occurred ...');
+  //   }
+  // };
   const scroll = (x) => {
     divRef.current.scrollLeft += x
   }
@@ -80,6 +101,11 @@ export default function Home() {
       setDivIndex((prevDivIndex) => prevDivIndex - 1)
     }
   }
+  const handleScroll = useHorizontalScrollEvent((e) => {
+    console.log('Horizontal scroll event occurred ...');
+  });
+
+  
 
   return (
     <div className={styles.container}>
@@ -126,7 +152,7 @@ export default function Home() {
         <div className='testimonials'>
           <h2>You can host <br/> anything, anywhere</h2>
           
-          <div className='t-container' ref={divRef}>
+          <div className='t-container' ref={divRef} onScroll={handleScroll}>
             {testimonials.map((item, i) => (
               <div key={i} className={divIndex === i? 't-card i-card' : 't-card'} style={{minWidth: divWidth }} >
                 <img src={item.img} />
