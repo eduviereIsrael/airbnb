@@ -1,0 +1,513 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+  background: #000;
+}
+::-webkit-scrollbar {
+  height: 0px;              
+  width: 4px;               
+  border: 1px solid #d5d5d5;
+  border: 1px solid #100024;
+  border-radius: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+h1 {
+  color: #fff;
+  align-self: center;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 70px;
+  text-align: center;
+  display: unset;
+
+  @media screen and (min-width: 768px){
+    font-size: 64px;
+    line-height: 45px;
+    font-weight: 400;
+  }
+}
+
+h2 {
+  align-self: center;
+  font-size: 27px;
+  font-weight: 600;
+  text-align: left;
+  display: block;
+
+  @media screen and (min-width: 768px){
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 500;
+
+  @media screen and (min-width: 768px){
+    font-size: 22px;
+  }
+
+}
+
+.mobile {
+
+  @media screen and (min-width: 768px){
+    display: none;
+  }
+}
+
+// @media screen and (min-width: 768px){
+
+// }
+
+// HERO SECTION STYLING
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 100%;
+
+  
+  .heroLeft {
+    
+    position: fixed;
+    background-color: #fff;
+    // height: 100px;
+    width: 100%;
+    padding: 25px 15px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.17);
+    z-index: 2;
+
+
+
+    .logo {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      display: none;
+
+      @media screen and (min-width: 768px){
+        display: block;
+
+      }
+    }
+
+    h1 {
+      display: none;
+    }
+
+    a {
+      // background-color: #FF385C;
+      padding: 12px 20px;
+      color: #fff;
+      border-radius: 10px;
+      align-self: center;
+      font-weight: 600;
+      font-size: 16px;
+      background: rgb(249,62,98);
+      width: 100%;
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px){
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      background-color: #000;
+      padding: 75px;
+      height: 100%;
+      box-shadow: 10px 0 20px rgba(0, 0, 0, 0);
+
+
+      h1 {
+        color: #fff;
+        align-self: center;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 70px;
+        text-align: center;
+        display: unset;
+      }
+  
+      a {
+        background-color: #FF385C;
+        padding: 12px 20px;
+        color: #fff;
+        border-radius: 10px;
+        align-self: center;
+        font-weight: 600;
+        font-size: 16px;
+        background: rgb(249,62,98);
+        width: unset;
+      }
+    }
+  
+  }
+
+  .heroRight {
+    background-color: #FF385C;
+    height: 300px;
+    width: 100%;
+    background: url("/heroimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: 768px){
+    flex-direction: row;
+    height: 75vh;
+    align-items: stretch;
+
+    .heroLeft {
+      width: 50%;
+    }
+    .heroRight {
+      background-color: #FF385C;
+      height: 100%;
+      width: 50%;
+    }
+ 
+  
+}
+
+}
+
+
+// 'WHAT YOU COULD EARN' SECTION STYLING
+.earn {
+  width: 100%;
+  padding: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #fff;
+  transform: translateY(-25px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  a {
+    text-decoration: underline;
+  }
+
+  h1 {
+    color: #000;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 600;
+    width: 70%;
+    text-align: left;
+    align-self: flex-start;
+  }
+
+  h2{
+    text-align: left;
+    // background-color: red;
+    padding: 30px 0 0 0;
+    // width: 40%;
+  }
+
+  @media screen and (min-width: 768px){
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 600;
+    text-align: center;
+
+    h1 {
+      // color: #000;
+      // font-size: 40px;
+      // line-height: 45px;
+      // font-weight: 600;
+      width: 70%;
+      text-align: center;
+      align-self: center;
+    }
+  
+    h2{
+      text-align: center;
+      // background-color: red;
+      padding: 30px 0 0 0;
+      width: 40%;
+    }
+
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+
+    div {
+      padding: 15px;
+      background-color: #F7F7F7;
+      width: 48%;
+      margin: 4px;
+      border-radius: 15px;
+      // flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      p {
+        font-size: 14px;
+        color: rgb(93, 93, 93);
+        padding: 0;
+        margin: 0;
+      }
+
+      span {
+        font-size: 16px;
+        color: rgb(26, 26, 26);
+        font-weight: 500;
+        padding: 0;
+        margin: 0;
+
+
+
+        .figures {
+          font-size: 24px;
+        }
+      }
+    }
+    
+    .monthly {
+      width: 100%;
+      // flex: 2;
+
+      span {
+        font-size: 23px;
+        color: rgb(26, 26, 26);
+        font-weight: 500;
+        color: rgb(249,62,98);
+
+        .figures {
+          font-size: 30px;
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px){
+      justify-content: center;
+      flex-wrap: nowrap;
+
+      div {
+        width: 25%;
+        margin:  0 10px;
+        padding: 16px 20px;
+
+        p {
+          margin: 0 0 15px 0;
+          padding: 0;
+          line-height: 100%;
+          font-weight: 400;
+        }
+
+        span {
+          font-size: 18px;
+          color: rgb(26, 26, 26);
+          font-weight: 500;
+          padding: 0;
+          margin: 0;
+          line-height: 100%;
+  
+  
+  
+          .figures {
+            font-size: 35px;
+            
+          }
+        }
+      }
+
+      .monthly {
+        width: 25%;
+
+        span {
+          font-size: 18px;
+          color: rgb(249,62,98);
+          font-weight: 500;
+          padding: 0;
+          margin: 0;
+  
+  
+  
+          .figures {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+
+  }
+
+  @media screen and (min-width: 768px){
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    transform: translateY(0px);
+    align-items: center;
+
+  }
+}
+
+// TESTIMONIALS SECTION STYLING
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 200px;
+
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  .t-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-x: auto;
+    max-width: 100%;
+    // background-color: red;
+
+    
+
+    .t-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 20px;
+
+      .larger-text {
+        font-size: 23px;
+        width: 80%;
+      }
+
+      &:nth-of-type(1){
+        display: none;
+        
+        @media screen and (min-width: 768px){
+          opacity: 0;
+          display: flex;
+        }
+      }
+
+      &:last-child{
+        display: none;
+
+        @media screen and (min-width: 768px){
+          display: flex;
+          opacity: 0;
+        }
+      }
+
+      img {
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.177);
+        margin-bottom: 20px;
+      }
+
+      div {
+        opacity: 0;
+        transition: all .5s ease;
+      }
+
+      @media screen and (min-width: 768px){
+        padding-left: 15px;
+        width: 30%;
+        img {
+          width: 90%;
+          
+        }
+      }
+    }
+
+    .i-card {
+      div {
+        opacity: 1;
+      }
+    }
+  }
+
+  .button-grp {
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    button {
+      height: 45px;
+      width: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-weight: 600;
+      margin-left: 20px;
+
+      border: none;
+      outline: none;
+    }
+
+    
+    @media screen and (min-width: 768px){
+      right: 100px;
+    }
+  }
+}
+
+
+
+
+
+
