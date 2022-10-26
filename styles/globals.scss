@@ -29,15 +29,15 @@ a {
   border-radius: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   html {
+//     color-scheme: dark;
+//   }
+//   body {
+//     color: white;
+//     background: black;
+//   }
+// }
 
 h1 {
   color: #fff;
@@ -277,13 +277,15 @@ h6 {
     width: 100%;
     align-items: flex-start;
     margin-bottom: 20px;
+    gap: 4px;
     
 
     div {
+      box-sizing: border-box;
       padding: 15px;
       background-color: #F7F7F7;
-      width: 45%;
-      margin: 4px;
+      width: 49%;
+      // margin: 4px;
       border-radius: 15px;
       // flex: 1;
       display: flex;
