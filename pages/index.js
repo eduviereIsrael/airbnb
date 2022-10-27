@@ -69,12 +69,12 @@ export default function Home() {
     },
 
   ]
-  const divRef = useRef();
-  const heroRef = useRef()
+ 
   const [divWidth, setDivWidth] = useState(0)
   const [divIndex, setDivIndex] = useState(1)
   const [showNav, setShowNav] = useState(false)
-
+  const divRef = useRef();
+  const heroRef = useRef()
   useEffect(() => {
     const width = window.innerWidth
     if (width >= 768){
@@ -92,7 +92,7 @@ export default function Home() {
     } else {
       setDivWidth(width)
     }
-    divRef.current.scrollLeft += 3000    
+    divRef.current.scrollRight += 3000
 
   
   }, [])
@@ -108,6 +108,7 @@ export default function Home() {
   const scroll = (x) => {
     divRef.current.scrollLeft += x
   }
+
 
   const changeIndex = (x) => {
     if (x === 'inc'){
@@ -136,8 +137,6 @@ export default function Home() {
   const airbnbLinks = [
     'Newsroom', 'Learn about new features', 'Letter from our founders', 'Careers', 'Investors', 'Gift cards'
   ]
-
-  
 
   return (
     <div className={styles.container}>
