@@ -664,7 +664,7 @@ h6 {
 
   h1 {
     color: #000;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 60%;
     margin: 0;
     padding: 0;
@@ -672,6 +672,19 @@ h6 {
 
     span {
       color: rgb(249,62,98);
+    }
+
+    @media screen and (min-width: 768px){
+      color: #000;
+      font-size: 80px;
+      line-height: 60%;
+      margin: 0;
+      padding: 0;
+      font-weight: 700;
+
+      span {
+        color: rgb(249,62,98);
+      }
     }
   }
 
