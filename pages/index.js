@@ -44,7 +44,7 @@ export default function Home() {
     },
     {
       img: '/assets/img3.png',
-      text: 'We’re able to keep our culture alive by hosting our pasta-making experience.',
+      text: 'We have been able to keep our culture alive by hosting our pasta-making experience.',
       name: 'Nerina',
       location: "Palombara Sabina"
     },
@@ -176,6 +176,45 @@ export default function Home() {
               }}>{'>'}</button>
           </div>
         </div>
+        
+        <div className='banner-container'>
+          <div className='ukr-banner'>
+            <h2>Help house 100,000 refugees fleeing Ukraine</h2>
+            <a>Learn more</a>
+          </div>
+        </div>
+
+        <div className='banner-container'>
+          <div className='sec-banner'>
+            <h2>Question about hosting? <br/>ask a Superhost</h2>
+            <a>Learn more</a>
+          </div>
+        </div>
+
+        <div className='banner-container third'>
+          <div className='third-banner'>
+            <div className='mobile t-b-head'>
+              <h1><span>air</span>cover</h1>
+              <p>for Hosts</p>
+            </div>
+            
+            <div className='t-b-details desktop'>
+              <h1><span>air</span>cover</h1>
+              <p>for Hosts</p>
+              <h2>Top-to-bottom protection. <br/> Always included, always free. <br/> Only on Airbnb.</h2>
+              <a>Learn more</a>
+            </div>
+            <img src='/assets/thirdbanner.webp' />
+          </div>
+          <div className='t-b-details mobile'>
+            <h2>Top-to-bottom protection. <br/> Always included, always free. <br/> Only on Airbnb.</h2>
+            <a>Learn more</a>
+          </div>
+          
+          
+        </div>
+        
+
       </main>
 {/* <source src="https://a0.muscache.com/v/a9/a7/a9a7873c-95de-5e37-8995-a5abb5b6b02f/a9a7873c95de5e378995a5abb5b6b02f_4000k_1.mp4?imformat=h265" type="video/mp4; codecs=hevc"> */}
     </div>

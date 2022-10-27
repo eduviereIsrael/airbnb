@@ -10,6 +10,7 @@ a {
   color: inherit;
   text-decoration: none;
   font-size: 14px;
+  cursor: pointer;
 }
 
 * {
@@ -84,6 +85,13 @@ h6 {
 
   @media screen and (min-width: 768px){
     display: none;
+  }
+}
+
+.desktop {
+  display: none;
+  @media screen and (min-width: 768px){
+    display: unset;
   }
 }
 
@@ -167,7 +175,6 @@ h6 {
       }
   
       a {
-        background-color: #FF385C;
         padding: 12px 20px;
         color: #fff;
         border-radius: 10px;
@@ -401,11 +408,16 @@ h6 {
   align-items: center;
   width: 100%;
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 
 
   h2 {
     margin-bottom: 30px;
+    text-align: left;
+    align-self: flex-start;
+    padding-left: 20px;
+    // width: 100%;
+    // background-color: red;
   }
 
   .t-container {
@@ -509,10 +521,202 @@ h6 {
       right: 100px;
     }
   }
+
+  @media screen and (min-width: 768px){
+
+    h2{
+      text-align: center;
+      // background-color: red;
+      padding: 30px 0 0 0;
+      width: 40%;
+      align-self: center;
+    }
+
+  }
+}
+
+// BANNER SECTIONS STYLING
+
+.banner-container {
+  width: 100%;
+  padding: 20px;
+  padding-top: 0;
+  margin-bottom: 0px;
+
+}
+
+.ukr-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF385C;
+  padding: 60px;
+  border-radius: 10px;
+  margin-bottom: 80px;
+
+  h2 {
+    text-align: center;
+    color: #fff;
+    padding: 10px 0 20px 0;
+    margin: 0;
+    line-height: 120%;
+    text-align: center;
+    width: 90%;
+  }
+  a {
+      padding: 12px 20px;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 10px;
+      align-self: center;
+      font-weight: 600;
+      font-size: 16px;
+      width: unset;
+  }
+
+  @media screen and (min-width: 768px){
+    padding: 140px;
+
+  }
+}
+
+.sec-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 240px 40px 80px;
+  border-radius: 10px;
+  margin-bottom: 0;
+
+  h2 {
+    text-align: center;
+    color: #fff;
+    padding: 10px 0 20px 0;
+    margin: 0;
+    line-height: 120%;
+    text-align: center;
+    width: 85%;
+    margin-bottom: 20px;
+  }
+  a {
+      padding: 18px 50px;
+      color: #000;
+      border: 1px solid rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+      align-self: center;
+      font-weight: 600;
+      font-size: 16px;
+      width: unset;
+      line-height: 100%;
+  }
+
+  @media screen and (min-width: 768px){
+    padding: 180px;
+
+  }
+  background: url("/assets/secbanner.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  // background-color: #000;
+}
+
+.third-banner {
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  position: relative;
+
+  padding-top: 40px;
+
+  .t-b-head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px){
+     display: none;
+    }
+  }
+
+  .t-b-details{
+    h2 {
+      text-align: left;
+      padding-bottom: 30px;
+      // background-color: red;
+    }
+
+    a {
+      margin-top: 25px;
+    }
+  }
+
+  h1 {
+    color: #000;
+    font-size: 80px;
+    line-height: 60%;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+
+    span {
+      color: rgb(249,62,98);
+    }
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  img {
+    width: 95%;
+    align-self: flex-end;
+
+    // @media screen and (min-width: 768px){
+    //   position: absolute;
+    //   left: 0;
+    // }
+  }
+  @media screen and (min-width: 768px){
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 70px 0 70px 70px;
+
+    img {
+      width: 36%;
+    }
+  }
+}
+
+.third{
+  margin-bottom: 200px;
+
+  a {
+    padding: 18px 50px;
+    color: #000;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    align-self: center;
+    font-weight: 600;
+    font-size: 16px;
+    width: unset;
+    line-height: 100%;
+    margin-top: 25px;
 }
 
 
-
-
-
-
+  h2 {
+    // margin-bottom: 25px;
+    padding-bottom: 30px;
+    // background-color: red;
+  }
+}
