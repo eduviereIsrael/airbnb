@@ -229,6 +229,8 @@ nav {
   flex-direction: column-reverse;
   align-items: center;
   width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
 
   
   .heroLeft {
@@ -556,7 +558,7 @@ nav {
     overflow-x: auto;
     max-width: 100%;
     // background-color: red;
-    scroll-snap-type: x;
+    scroll-snap-type: x mandatory;
     justify-content: flex-start;
     align-self: flex-start;
 
@@ -573,7 +575,7 @@ nav {
       
 
       .larger-text {
-        font-size: 14px;
+        font-size: 23px;
         width: 80%;
       }
 

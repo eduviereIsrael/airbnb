@@ -208,7 +208,7 @@ export default function Home() {
           <div className='t-container' ref={divRef} >
             {testimonials.map((item, i) => (
               <div key={i} className={divIndex === i? 't-card i-card' : 't-card'} style={{minWidth: divWidth }} >
-                <img src={item.img} />
+                <img src={item.img} style={{ width: `${divWidth * 80/100}px` }}/>
                 <div>
                   <p className='larger-text'>{item.text}</p>
                   <p className='t-card-name'>{item.name}</p>
