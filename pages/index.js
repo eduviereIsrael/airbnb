@@ -120,6 +120,23 @@ export default function Home() {
   //   console.log('Horizontal scroll event occurred ...');
   // });
 
+  const supportLinks = [
+    'Help Center', 'AirCover', 'Safety information', 'Supporting people with disabilities', 'Cancellation options', 'Our COVID-19 Response', 'Report a neighborhood concern'
+  ]
+
+  const communityLinks = [
+    'Airbnb.org: disaster relief housing', 'Support Afghan refugees', 'Combating discrimination'
+  ]
+
+  const hostingLinks = [
+    'Try hosting', 'AirCover for Hosts', 'Explore hosting resources', 'Visit our community forum',
+    'How to host responsibly'
+  ]
+
+  const airbnbLinks = [
+    'Newsroom', 'Learn about new features', 'Letter from our founders', 'Careers', 'Investors', 'Gift cards'
+  ]
+
   
 
   return (
@@ -251,13 +268,60 @@ export default function Home() {
         </div>
 
         <div className='v-banner'>
-          <div className='v-b-video'></div>
-          <div></div>
+          <div className='v-b-video'>
+            <video src='/assets/bg2.mp4' autoPlay loop muted />
+          </div>
+          <div className='v-b-cta'>
+            <h2>Try hosting on <br/> Airbnb</h2>
+            <p>Join us. We'll help you every <br/> step of the way</p>
+            <a className='desktop'>Let's go</a>
+          </div>
         </div>
         
 
       </main>
-{/* <source src="https://a0.muscache.com/v/a9/a7/a9a7873c-95de-5e37-8995-a5abb5b6b02f/a9a7873c95de5e378995a5abb5b6b02f_4000k_1.mp4?imformat=h265" type="video/mp4; codecs=hevc"> */}
+      <footer>
+        <div className='footer-links'>
+          <div className='support'>
+            <p className='f-l-head'>Support</p>
+            {supportLinks.map((item, i) => (
+              <p key={i}>{item}</p>
+            ))}
+          </div>
+          <div className='community'>
+            <p className='f-l-head'>Community</p>
+            {communityLinks.map((item, i) => (
+              <p key={i}>{item}</p>
+            ))}
+          </div>
+          <div className='hosting'>
+            <p className='f-l-head'>Hosting</p>
+            {hostingLinks.map((item, i) => (
+              <p key={i}>{item}</p>
+            ))}
+          </div>
+          <div className='airbnb'>
+            <p className='f-l-head'>Airbnb</p>
+            {airbnbLinks.map((item, i) => (
+              <p key={i}>{item}</p>
+            ))}
+          </div>
+        </div>
+        <hr/>
+        <div className='copyright'>
+          <p className='c-head'>English (US) $ USD</p>
+          <p className='mobile'>© 2022 Airbnb, Inc.</p>
+          <div className='c-links'>
+            <p className='desktop'>© 2022 Airbnb, Inc.</p>
+
+            <p>Privacy</p>
+            <span>.</span>
+            <p>Terms</p>
+            <span>.</span>
+            <p>Sitemap</p>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
