@@ -99,6 +99,104 @@ h6 {
 
 // }
 
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: rgba(255, 255, 255, 0);
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  padding-top: 30px;
+
+  @media screen and (min-width: 768px){
+    width: 100%;
+    padding: 10px 25px;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255);
+
+  }
+
+
+  // .nav-logo {
+  // }
+
+  .logo {
+    color: #000;
+    background-color: #000;
+    
+  }
+
+  .nav-host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .superhost {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 30px;
+      border: 1px solid gray;
+      padding: 0 20px;
+      background-color: #fff;
+      height: 44px;
+      margin-right: 45px;
+      box-shadow: 0 3px 2px rgba(63, 63, 63, 0.139);
+      transition: all .3s ease;
+
+      p {
+        // line-height: 0%;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        font-weight: 500;
+        padding-bottom: 2px;
+      }
+
+      .avatars {
+        padding: 10px;
+
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          // transform: translateX(15px);
+          left: -50%;
+          margin-left: -10px;
+          padding: 0;
+          margin: 0 unset;
+        }
+        
+      }
+
+      &:hover {
+        box-shadow: 0 5px 15px rgba(63, 63, 63, 0.139);
+      }
+
+      @media screen and (min-width: 768px){
+        width: 220px;
+        padding: 5px 15px 3px 7px;
+       
+      }
+    
+    }
+
+    a {
+      padding: 12px 20px;
+      color: #fff;
+      border-radius: 10px;
+      align-self: center;
+      font-weight: 600;
+      font-size: 16px;
+      background: rgb(249,62,98);
+      width: unset;
+    }
+}
+}
+
 // HERO SECTION STYLING
 .hero {
   display: flex;
@@ -451,7 +549,7 @@ h6 {
         display: none;
         
         @media screen and (min-width: 768px){
-          opacity: 0;
+          // opacity: 0;
           display: flex;
         }
       }
