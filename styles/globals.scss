@@ -154,6 +154,7 @@ nav {
         font-size: 15px;
         font-weight: 500;
         padding-bottom: 2px;
+        width: max-content;
       }
 
       .avatars {
@@ -165,7 +166,7 @@ nav {
           border-radius: 50%;
           // transform: translateX(15px);
           left: -50%;
-          margin-left: -10px;
+          margin: 0 0 0 -10px;
           padding: 0;
           margin: 0 unset;
         }
