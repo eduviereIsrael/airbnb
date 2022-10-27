@@ -131,6 +131,7 @@ export default function Home() {
             </div>
             <a className='desktop'>Try hosting</a>
           </div>
+          
         </nav>
         <div className='hero'>
           <div className='heroLeft'>
