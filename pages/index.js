@@ -213,6 +213,11 @@ export default function Home() {
           
           
         </div>
+
+        <div className='v-banner'>
+          <div className='v-b-video'></div>
+          <div></div>
+        </div>
         
 
       </main>
